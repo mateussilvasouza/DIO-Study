@@ -85,7 +85,7 @@ com as alterações necessárias.
 // function getUserWithFullName(user){
 //     return{
 //         ...user,
-//         fullName:'${user.name} ${user.lastName}'
+//         fullName:`${user.name} ${user.lastName}`
 //     }
 // }
 

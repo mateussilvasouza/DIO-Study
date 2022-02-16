@@ -1,4 +1,6 @@
-// /* Criação de Arrays */
+/* Criação de Arrays 
+    Métodos para criação e manipulação de arrays.
+*/
 // const values = [1,2,3,4];
 // const values2 = new Array(1,2,3,4); //Cria o array de forma semelhante ao Array.of
 // const arr = Array(3);
