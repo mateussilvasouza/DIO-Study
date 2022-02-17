@@ -98,5 +98,5 @@ const fruits = ['Laranja', 'Maçã', 'Abacate', 'Mangá', 'Uva'];
 
 //reduce retorna um novo tipo de dado iterando cada posição do array
 const arrReduced = arr.reduce((total,value) => total += value, 0);
-//reduce segue o padrão ((acumulador, valor) => condição, valor inicial)
+//reduce segue o padrão ((acumulador, valor) => condição, tipo de retorno)
 console.log(`${arrReduced}`);
