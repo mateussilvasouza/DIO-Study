@@ -47,29 +47,56 @@ const arr3 = [1,2,3,[4,5],[6,[7,8,[9,10]]]];
 /* Métodos de Busca */
 
 //.find retorna o primeiro item que satifaz a condição
-const firstGreaterThanTwo = arr.find( value => value > 2);
-console.log(`\n${firstGreaterThanTwo}`);
+// const firstGreaterThanTwo = arr.find( value => value > 2);
+// console.log(`\n${firstGreaterThanTwo}`);
 
 const fruits = ['Laranja', 'Maçã', 'Abacate', 'Mangá', 'Uva'];
-const apple = fruits.find( fruit => fruit == 'Maçã');
-console.log(`\n${apple}`);
+// const apple = fruits.find( fruit => fruit == 'Maçã');
+// console.log(`\n${apple}`);
 
-//.filter retorna um array com os elementos que satifazem a condição
-const fruitsStartingWithM = fruits.filter(fruit => fruit.charAt(0) == 'M');
-console.log(`\n${fruitsStartingWithM}`);
+// //.filter retorna um array com os elementos que satifazem a condição
+// const fruitsStartingWithM = fruits.filter(fruit => fruit.charAt(0) == 'M');
+// console.log(`\n${fruitsStartingWithM}`);
 
-//.indexOf retorna o índice do primeiro elemento procurado em um array.
-//.lastIndexOf retorna o índice do último elemento procurado em um array.
-const abacateIndex = fruits.indexOf('Abacate');
-console.log(`\n${abacateIndex}`);
+// //.indexOf retorna o índice do primeiro elemento procurado em um array.
+// //.lastIndexOf retorna o índice do último elemento procurado em um array.
+// const abacateIndex = fruits.indexOf('Abacate');
+// console.log(`\n${abacateIndex}`);
 
-const arr4 = [1,2,3,2,1,3];
-const elementOne = arr4.lastIndexOf(1);
-console.log(`\n${elementOne}`);
+// const arr4 = [1,2,3,2,1,3];
+// const elementOne = arr4.lastIndexOf(1);
+// console.log(`\n${elementOne}`);
 
-const elementTwo = arr4.lastIndexOf(2);
-console.log(`\n${elementTwo}`);
+// const elementTwo = arr4.lastIndexOf(2);
+// console.log(`\n${elementTwo}`);
 
-//.includes retornar um booleano verificando se um elemento existe no array
-const goiaba = arr3.includes('Goiaba');
-console.log(goiaba);
+// //.includes retornar um booleano verificando se um elemento existe no array
+// const goiaba = arr3.includes('Goiaba');
+// console.log(`{$goiaba}`);
+
+//.every retorna um booleano verificando se todos os itens satisfazem um condição
+//Retorna false pois não são todos os elementos igual a 'Uva'
+// const allEvenFruits = fruits.every(fruit => fruit == 'Uva');
+// console.log(`${allEvenFruits}`);
+// //Retorna true pois todos os elementos são do tipo number
+// const allNumbers = arr.every(value => typeof value == "number");
+// console.log(`${allNumbers}`);
+
+/* Métodos de transformação de arrays */
+
+//sort ordena os elementos do array de acordo com a condição
+// const arrDescending = arr.sort((value,value2) => value2 - value);
+// console.log(`${arrDescending}`);
+
+// //reverse inverte o sentido do array
+// const arrReverse = arrDescending.reverse(arrDescending);
+// console.log(`${arrReverse}`);
+
+// //join retorna os elementos de uma array como string separados por um delimitador
+// const stringFruits = fruits.join(" ");//o delimitador usado é um espaço
+// console.log(`${stringFruits}`);
+
+//reduce retorna um novo tipo de dado iterando cada posição do array
+const arrReduced = arr.reduce((total,value) => total += value, 0);
+//reduce segue o padrão ((acumulador, valor) => condição, valor inicial)
+console.log(`${arrReduced}`);

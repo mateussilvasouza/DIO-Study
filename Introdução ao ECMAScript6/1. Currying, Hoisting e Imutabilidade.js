@@ -121,4 +121,4 @@ console.log('Alunos aprovados:');
 console.log(getApprovedStudents(students));
 
 console.log('\nLista de alunos:');
-console.log(students);
+console.log(`${students}`);
