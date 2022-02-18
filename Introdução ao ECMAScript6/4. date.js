@@ -1,5 +1,18 @@
 
 const hoje = new Date();//armazena a data atual
+/* Métodos construtores 
+
+new Date();
+new Date(valor); 
+    Um valor inteiro representando o número de milisegundos desde
+      1 de Janeiro de 1970 00:00:00 UTC (Era Unix ou Marco Zero).
+new Date(dataString);
+    new Date("1995-12-17T03:24:00")
+
+new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);
+    new Date(1995,11,17,3,24,0);
+*/ 
+
 console.log(`${hoje}`);
 
 console.log(`${hoje.getDay()}`);
