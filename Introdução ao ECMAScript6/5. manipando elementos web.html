@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando elementos da página</title>
+    <script type="text/javascript" src="/Introdução ao ECMAScript6/manipulando elementos WEB.js"></script>
+
+</head>
+<body>
+    <p>O texto para teste da manipulação dos elementos.</p>
+    <button type="button" onclick = "clicar()">Click</button>
+
+    <!-- javaScript da Página -->
+    <script>
+        //criamos uma função para que ao clicar no 
+        //botão o texto do paragrafo seja alterado
+        function clicar(){
+            const paragrafo = document.querySelector('p').innerHTML = 'Funcionou!';
+            const style = document.getElementsByTagName('p').style = 'color = white';
+        }
+    </script>
+</body>
+</html>

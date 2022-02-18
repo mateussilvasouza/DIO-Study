@@ -1,0 +1,11 @@
+{
+  "name": "introducao-ao-ecmascript6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1. currying, Hoisting e Imutabilidade.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
