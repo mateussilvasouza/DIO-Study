@@ -59,3 +59,7 @@ logArgs(arrTest);/*usando rest o console irá imprimir [[1,2,3,4,5]]
 const arrTest2 = [...arrTest, 6,7,8];
 
 console.log(arrTest2);
+
+/*Destructuring Assignment (Atribuição de desestruturação)
+    Formas de descontruir arrays e objetos
+*/
