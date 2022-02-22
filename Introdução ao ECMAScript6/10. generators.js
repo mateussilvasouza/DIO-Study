@@ -83,6 +83,11 @@ const obj3 = {
 
 
 /*O uso do Symbol.iterator no objeto permitiu o uso do for of para iteração*/
-for(let value of obj3){
-    console.log(value);
-}
+// for(let value of obj3){
+//     console.log(value);
+// }
+
+/*O Symbol permitiu ainda a utilização do Spread */
+const arr3 = [...obj3];
+
+console.log(arr3);
