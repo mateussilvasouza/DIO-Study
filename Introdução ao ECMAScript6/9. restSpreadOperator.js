@@ -71,3 +71,19 @@ console.log(arr);
 console.log(maca);
 console.log(banana);
 console.log(abobora);
+
+
+//Destructuring de Objetos
+var obj = {
+  name: 'Celso',
+  props: {
+    age: 26
+  }
+};
+
+console.log(obj);
+
+var { name, props: {age} } = obj;
+
+console.log(name);
+console.log(age);
