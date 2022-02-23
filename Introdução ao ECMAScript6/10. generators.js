@@ -91,3 +91,5 @@ const obj3 = {
 const arr3 = [...obj3];
 
 console.log(arr3);
+
+/*Generators*/
