@@ -88,8 +88,27 @@ const obj3 = {
 // }
 
 /*O Symbol permitiu ainda a utilização do Spread */
-const arr3 = [...obj3];
+// const arr3 = [...obj3];
 
-console.log(arr3);
+// console.log(arr3);
 
-/*Generators*/
+/*Generators são interfaces de iteração seguindo a mesma dinamica do value e done
+em Symbol.iterator*/
+
+function* hello(){ //Com o uso do * e do yield é possível fazer pausas
+    
+    console.log("Hello");
+    yield;
+
+    console.log("from");
+    yield;
+
+    console.log("function");
+}
+//o Generator se comunica pela mesma interface, logo é necessário um auxiliar para ver
+// a operação
+
+const it = hello();
+it.next();
+it.next();
+it.next();
