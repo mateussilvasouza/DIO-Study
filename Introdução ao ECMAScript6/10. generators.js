@@ -55,23 +55,23 @@ symbol, esse valor é um identificador para fim de debug.
 //     console.log(value);
 // }
 
-const obj3 = {
-    values: [1,2,3,4],
-    [Symbol.iterator](){
-        /* Através do symbol tornaremos o objeto iterável */
-        let i = 0;
+// const obj3 = {
+//     values: [1,2,3,4],
+//     [Symbol.iterator](){
+//         /* Através do symbol tornaremos o objeto iterável */
+//         let i = 0;
 
-        return {
-            next: () => {
-                i++;
-                return {
-                    value: this.values[i-1],
-                    done: i > this.values.length
-                 };
-            }
-        };
-    }
-};
+//         return {
+//             next: () => {
+//                 i++;
+//                 return {
+//                     value: this.values[i-1],
+//                     done: i > this.values.length
+//                  };
+//             }
+//         };
+//     }
+// };
 
 // const it = obj3[Symbol.iterator]();
 
@@ -109,6 +109,23 @@ function* hello(){ //Com o uso do * e do yield é possível fazer pausas
 // a operação
 
 const it = hello();
-it.next();
-it.next();
-it.next();
+// it.next();
+// it.next();
+// it.next();
+
+/*Utilizaremos o * no Symbol.iterator transformando-o em um generator */
+
+const obj3 = {
+    values: [1,2,3,4],
+    *[Symbol.iterator](){
+        /* Através do symbol tornaremos o objeto iterável */
+        for(var i = 0; i< this.values.length;i++){
+            yield this.values[i];
+        }
+    }
+};
+
+//o objeto que antes não era iteravel agora é capaz de ser iterado
+for(let value of obj3){
+    console.log(value);
+}
