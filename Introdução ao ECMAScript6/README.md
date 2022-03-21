@@ -1,0 +1,1 @@
+# Pasta contendo conteúdo de aprendizado do JavaScript, juntamente com anotações para consultas futuras.
