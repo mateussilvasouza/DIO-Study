@@ -1,5 +1,5 @@
-// const assert = require('assert');
-// const Math = require('../14. mochaMath.js');
+const assert = require('assert');
+const Math = require('../14. mochaMath.js');
 
 // describe('Math class', function (){
 //     it('Sum two numbers', function(){
@@ -11,9 +11,6 @@
 /**Após garantir que o teste está funcionando iremos transformar
  * a função em assincrona e verificar como seria o funcionamento do teste.
  */
-
- const assert = require('assert');
- const Math = require('../14. mochaMath.js');
  
  describe('Math class', function (){
     /**hooks são formas de aproveitar código evitando repetição */
