@@ -125,4 +125,5 @@
                 filename: "index.html"
             })
         ]
-    }~~~
+    }
+    ~~~
