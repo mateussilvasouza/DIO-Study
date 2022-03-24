@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin"); //Importa o plugin htm
 
 module.exports = { //exporta o código que será utilizado em node
     mode: 'production',
+    devtool: 'source-map', //mapeia os arquivos
     entry: './src/index.js', //Recebe o arquivo de entrada
     output: {
         path: path.resolve(__dirname, 'dist'), //diretório de saída que será gerado
