@@ -95,8 +95,7 @@
 
 ## Resultado final do código do webpack.config.js
 
-    ```javascript
-    
+    ~~~javascript
     const path = new require('path');  //Pega o diretório padrão
     const HtmlWebPackPlugin = require("html-webpack-plugin"); //Importa o plugin html
 
@@ -125,5 +124,4 @@
                 filename: "index.html"
             })
         ]
-    }
-    ```
+    }~~~
