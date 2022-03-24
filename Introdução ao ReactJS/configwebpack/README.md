@@ -124,5 +124,4 @@
                 filename: "index.html"
             })
         ]
-    }
-    ```
+    }```
