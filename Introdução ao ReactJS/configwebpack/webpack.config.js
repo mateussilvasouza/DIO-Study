@@ -21,6 +21,9 @@ module.exports = { //exporta o código que será utilizado em node
 
         ]
     },
+    resolve: {
+        extensions: ['.js','.jsx'],
+    },
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/index.html",
