@@ -5,4 +5,10 @@
 * Renderização;
 * Componentes e Props;
 * Estado e Ciclo de Vida (Inicialiação, montagem, atualização e desmontagem.);
-* Ecossistema do React(Algumas ferramentas: React Router, Redux, Material UI, Ant-Design, Storybook, Gatsby; Jest; React i18n Next.);
+* Ecossistema do React(Algumas ferramentas: React Router, Redux, Material UI, Ant-Design, Storybook, Gatsby; Jest; React i18n Next.
+
+### Webpack
+
+    O webpack é um **module bundler** (um empacotador de módulos para aplicações JS). Ao utilizar o React-Scripts o webpack já vem configurado por debaixo dos panos. Veremos como realizar essa configuração manualmente.
+
+#### Principais Conceitos do WebPack
